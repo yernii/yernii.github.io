@@ -1,1 +1,0 @@
-# yernii.github.io
