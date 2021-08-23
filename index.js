@@ -54,8 +54,50 @@ const floor = new THREE.Mesh(
 floor.rotation.x = -Math.PI * 0.5
 floor.position.y = 0
 scene.add(floor)
+// Particles
+const particlesGeometry=new THREE.BufferGeometry()
+const count=50000
 
+const positions=new Float32Array(count*3)
+for (let i=0; i<count*3;i++){
+  positions[i]=(Math.random()-0.5)*100
+}
+particlesGeometry.setAttribute(
+  'position',
+  new THREE.BufferAttribute(positions,3)
+)
+const particlesMaterial=new THREE.PointsMaterial({
+  size:0.08,
+  sizeAttenuation:true,
+  color:'white'
+})
 
+const particles = new THREE.Points(particlesGeometry, particlesMaterial)
+scene.add(particles)
+//Overlay
+const overlayGeometry = new THREE.PlaneBufferGeometry(2, 2, 1, 1)
+const overlayMaterial = new THREE.ShaderMaterial({
+    // wireframe: true,
+    transparent: true,
+    uniforms:
+    {
+        uAlpha: { value: 1 }
+    },
+    vertexShader: `
+        void main()
+        {
+            gl_Position = vec4(position, 1.0);
+        }
+    `,
+    fragmentShader: `
+        uniform float uAlpha;
+
+        void main()
+        {
+            gl_FragColor = vec4(0.0, 0.0, 0.0, uAlpha);
+        }
+    `
+})
 
 
 //Rectangle as a frame 
