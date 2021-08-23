@@ -1,7 +1,7 @@
 *
 {
     margin: 0;
-    padding: 0;
+	padding: 0;
 }
 :root {
   --border-size: 0.125rem;
@@ -20,13 +20,14 @@
 .container {
 	position: fixed;
 	bottom: 0;
-	margin-left:200px;
+	margin-left:140px;
 	margin-bottom:20px;
     width: 100%;
 }
 .glow-on-hover {
     width: 220px;
-    height: 50px;
+	height: 50px;
+	margin-right: 40px;
     border: none;
     outline: none;
     color: #fff;
@@ -188,7 +189,7 @@ a, button, input, select {
 	z-index: 3;
 	margin-left: 950px ;
 	margin-right: left;
-	margin-top: 150px;
+	margin-top: 450px;
 	left: 0;
 	right: 0;
 	text-align: center;
