@@ -54,6 +54,7 @@ const floor = new THREE.Mesh(
 floor.rotation.x = -Math.PI * 0.5
 floor.position.y = 0
 scene.add(floor)
+
 // Particles
 const particlesGeometry=new THREE.BufferGeometry()
 const count=50000
@@ -74,7 +75,7 @@ const particlesMaterial=new THREE.PointsMaterial({
 
 const particles = new THREE.Points(particlesGeometry, particlesMaterial)
 scene.add(particles)
-//Overlay
+//Overlay needs to be finished
 const overlayGeometry = new THREE.PlaneBufferGeometry(2, 2, 1, 1)
 const overlayMaterial = new THREE.ShaderMaterial({
     // wireframe: true,
