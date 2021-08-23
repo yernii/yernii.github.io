@@ -54,7 +54,6 @@ const floor = new THREE.Mesh(
 floor.rotation.x = -Math.PI * 0.5
 floor.position.y = 0
 scene.add(floor)
-
 // Particles
 const particlesGeometry=new THREE.BufferGeometry()
 const count=50000
@@ -75,7 +74,7 @@ const particlesMaterial=new THREE.PointsMaterial({
 
 const particles = new THREE.Points(particlesGeometry, particlesMaterial)
 scene.add(particles)
-//Overlay needs to be finished
+//Overlay
 const overlayGeometry = new THREE.PlaneBufferGeometry(2, 2, 1, 1)
 const overlayMaterial = new THREE.ShaderMaterial({
     // wireframe: true,
@@ -99,7 +98,35 @@ const overlayMaterial = new THREE.ShaderMaterial({
         }
     `
 })
+// Experience, skills, etc buttons
 
+
+// This code portion needs to be refractored to be cleaner!!
+const torusgeometry = new THREE.TorusGeometry(0.5, 0.25, 4, 10);
+const torusmaterial = new THREE.MeshBasicMaterial({color:'black', wireframe: true });
+const torus = new THREE.Mesh(torusgeometry, torusmaterial);
+torus.position.set(8.5,1,12)
+torus.rotation.set(0, 0.8, 0)
+scene.add(torus);
+const torusgeometry1 = new THREE.TorusGeometry(0.5, 0.25, 4, 10);
+const torusmaterial1 = new THREE.MeshBasicMaterial({ color: 'black', wireframe: true });
+const torus1 = new THREE.Mesh(torusgeometry1, torusmaterial1);
+torus1.position.set(12.2, 1, 8.2)
+torus1.rotation.set(0, 0.75, 0)
+
+scene.add(torus1);
+const torusgeometry2 = new THREE.TorusGeometry(0.5, 0.25, 4, 10);
+const torusmaterial2 = new THREE.MeshBasicMaterial({ color: 'black', wireframe: true });
+const torus2 = new THREE.Mesh(torusgeometry2, torusmaterial2);
+torus2.position.set(11, 1, 9.5)
+torus2.rotation.set(0, 0.75, 0)
+scene.add(torus2);
+const torusgeometry3 = new THREE.TorusGeometry(0.5, 0.25, 4, 10);
+const torusmaterial3 = new THREE.MeshBasicMaterial({ color: 'black', wireframe: true });
+const torus3 = new THREE.Mesh(torusgeometry3, torusmaterial3);
+torus3.position.set(9.8, 1, 10.8)
+torus3.rotation.set(0, 0.75, 0)
+scene.add(torus3);
 
 //Rectangle as a frame 
 const texturePainting = new THREE.TextureLoader().load(
