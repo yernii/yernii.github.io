@@ -127,7 +127,123 @@ const torus3 = new THREE.Mesh(torusgeometry3, torusmaterial3);
 torus3.position.set(9.8, 1, 10.8)
 torus3.rotation.set(0, 0.75, 0)
 scene.add(torus3);
+// Category text
+const loader = new THREE.FontLoader();
+loader.load(
+  // resource URL
+  './fonts/helvetiker_regular.typeface.json',
 
+  // onLoad callback
+  (font)=> {
+    const textGeometry=new THREE.TextBufferGeometry(
+      "Projects",
+      {
+        font:font,
+        size:0.4,
+        height:0.1,
+        curveSegments:20,
+        bevelEnabled:true,
+        bevelThickness:0.015,
+        bevelSize:0.02,
+        bevelOffset:0,
+        bevelSegments:50
+
+      }
+    )
+    const textMaterial=new THREE.MeshBasicMaterial({color:'black'})
+    const text=new THREE.Mesh(textGeometry,textMaterial)
+    text.position.set(7.5, 0.2, 14)
+    text.rotation.set(0, 1.2, 0)
+    scene.add(text);
+  }
+);
+const loader2 = new THREE.FontLoader();
+loader2.load(
+  // resource URL
+  './fonts/helvetiker_regular.typeface.json',
+
+  // onLoad callback
+  (font) => {
+    const textGeometry2 = new THREE.TextBufferGeometry(
+      "Experience",
+      {
+        font: font,
+        size: 0.4,
+        height: 0.1,
+        curveSegments: 20,
+        bevelEnabled: true,
+        bevelThickness: 0.015,
+        bevelSize: 0.02,
+        bevelOffset: 0,
+        bevelSegments: 50
+
+      }
+    )
+    const textMaterial2 = new THREE.MeshBasicMaterial({ color: 'black' })
+    const text2 = new THREE.Mesh(textGeometry2, textMaterial2)
+    text2.position.set(10.7, 0.2, 11.5)
+    text2.rotation.set(0, 1.2, 0)
+    scene.add(text2);
+  }
+);
+const loader1 = new THREE.FontLoader();
+loader1.load(
+  // resource URL
+  './fonts/helvetiker_regular.typeface.json',
+
+  // onLoad callback
+  (font) => {
+    const textGeometry1 = new THREE.TextBufferGeometry(
+      "Skills",
+      {
+        font: font,
+        size: 0.4,
+        height: 0.1,
+        curveSegments: 20,
+        bevelEnabled: true,
+        bevelThickness: 0.015,
+        bevelSize: 0.02,
+        bevelOffset: 0,
+        bevelSegments: 50
+
+      }
+    )
+    const textMaterial1 = new THREE.MeshBasicMaterial({ color: 'black' })
+    const text1 = new THREE.Mesh(textGeometry1, textMaterial1)
+    text1.position.set(13, 0.2, 9.5)
+    text1.rotation.set(0, 1.2, 0)
+    scene.add(text1);
+  }
+);
+const loader4 = new THREE.FontLoader();
+loader4.load(
+  // resource URL
+  './fonts/helvetiker_regular.typeface.json',
+
+  // onLoad callback
+  (font) => {
+    const textGeometry4 = new THREE.TextBufferGeometry(
+      "Education",
+      {
+        font: font,
+        size: 0.4,
+        height: 0.1,
+        curveSegments: 20,
+        bevelEnabled: true,
+        bevelThickness: 0.015,
+        bevelSize: 0.02,
+        bevelOffset: 0,
+        bevelSegments: 50
+
+      }
+    )
+    const textMaterial4 = new THREE.MeshBasicMaterial({ color: 'black' })
+    const text4 = new THREE.Mesh(textGeometry4, textMaterial4)
+    text4.position.set(9, 0.2, 12.8)
+    text4.rotation.set(0, 1.2, 0)
+    scene.add(text4);
+  }
+);
 //Rectangle as a frame 
 const texturePainting = new THREE.TextureLoader().load(
   "./2.jpeg"
@@ -255,6 +371,10 @@ const tick = () => {
 
 
 
+  torus.rotation.z+=0.003
+  torus1.rotation.z += 0.003
+  torus2.rotation.z += 0.003
+  torus3.rotation.z += 0.003
 
 
   box.rotation.y += 0.02
@@ -280,4 +400,3 @@ const tick = () => {
 }
 
 tick()
-
