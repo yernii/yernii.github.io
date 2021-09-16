@@ -7,7 +7,7 @@ import { OrbitControls } from 'https://unpkg.com/three@0.126.1/examples/jsm/cont
  * Base
  */
 // Debug
-// const gui = new dat.GUI()
+// const gui = new dat.GUI() 1
 
 // Canvas
 const canvas = document.querySelector('canvas.webgl')
