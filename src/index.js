@@ -103,28 +103,31 @@ const overlayMaterial = new THREE.ShaderMaterial({
 
 // This code portion needs to be refractored to be cleaner!!
 const torusgeometry = new THREE.TorusGeometry(0.5, 0.25, 4, 10);
-const torusmaterial = new THREE.MeshBasicMaterial({color:'black', wireframe: true });
+const torusmaterial = new THREE.MeshBasicMaterial({ color:'white', wireframe: true });
 const torus = new THREE.Mesh(torusgeometry, torusmaterial);
-torus.position.set(8.5,1,12)
+torus.position.set(6.5, 1, 14)
 torus.rotation.set(0, 0.8, 0)
 scene.add(torus);
+
+
+
 const torusgeometry1 = new THREE.TorusGeometry(0.5, 0.25, 4, 10);
-const torusmaterial1 = new THREE.MeshBasicMaterial({ color: 'black', wireframe: true });
+const torusmaterial1 = new THREE.MeshBasicMaterial({ color: 'white', wireframe: true });
 const torus1 = new THREE.Mesh(torusgeometry1, torusmaterial1);
-torus1.position.set(12.2, 1, 8.2)
+torus1.position.set(9, 1, 11.4)
 torus1.rotation.set(0, 0.75, 0)
 
 scene.add(torus1);
 const torusgeometry2 = new THREE.TorusGeometry(0.5, 0.25, 4, 10);
-const torusmaterial2 = new THREE.MeshBasicMaterial({ color: 'black', wireframe: true });
+const torusmaterial2 = new THREE.MeshBasicMaterial({ color: 'white', wireframe: true });
 const torus2 = new THREE.Mesh(torusgeometry2, torusmaterial2);
-torus2.position.set(11, 1, 9.5)
+torus2.position.set(14.2, 1, 6.1)
 torus2.rotation.set(0, 0.75, 0)
 scene.add(torus2);
 const torusgeometry3 = new THREE.TorusGeometry(0.5, 0.25, 4, 10);
-const torusmaterial3 = new THREE.MeshBasicMaterial({ color: 'black', wireframe: true });
+const torusmaterial3 = new THREE.MeshBasicMaterial({ color: 'white', wireframe: true });
 const torus3 = new THREE.Mesh(torusgeometry3, torusmaterial3);
-torus3.position.set(9.8, 1, 10.8)
+torus3.position.set(11.5, 1, 8.8)
 torus3.rotation.set(0, 0.75, 0)
 scene.add(torus3);
 // Category text
@@ -152,8 +155,8 @@ loader.load(
     )
     const textMaterial=new THREE.MeshBasicMaterial({color:'black'})
     const text=new THREE.Mesh(textGeometry,textMaterial)
-    text.position.set(7.5, 0.2, 14)
-    text.rotation.set(0, 1.2, 0)
+    text.position.set(6.5, 0.2, 15)
+    text.rotation.set(0, 0.8, 0)
     scene.add(text);
   }
 );
@@ -181,8 +184,8 @@ loader2.load(
     )
     const textMaterial2 = new THREE.MeshBasicMaterial({ color: 'black' })
     const text2 = new THREE.Mesh(textGeometry2, textMaterial2)
-    text2.position.set(10.7, 0.2, 11.5)
-    text2.rotation.set(0, 1.2, 0)
+    text2.position.set(11.5, 0.2, 9.8)
+    text2.rotation.set(0, 0.8, 0)
     scene.add(text2);
   }
 );
@@ -210,8 +213,8 @@ loader1.load(
     )
     const textMaterial1 = new THREE.MeshBasicMaterial({ color: 'black' })
     const text1 = new THREE.Mesh(textGeometry1, textMaterial1)
-    text1.position.set(13, 0.2, 9.5)
-    text1.rotation.set(0, 1.2, 0)
+    text1.position.set(14.2, 0.2, 7.1)
+    text1.rotation.set(0, 0.8, 0)
     scene.add(text1);
   }
 );
@@ -239,8 +242,8 @@ loader4.load(
     )
     const textMaterial4 = new THREE.MeshBasicMaterial({ color: 'black' })
     const text4 = new THREE.Mesh(textGeometry4, textMaterial4)
-    text4.position.set(9, 0.2, 12.8)
-    text4.rotation.set(0, 1.2, 0)
+    text4.position.set(9, 0.2, 12.4)
+    text4.rotation.set(0, 0.8, 0)
     scene.add(text4);
   }
 );
@@ -400,3 +403,4 @@ const tick = () => {
 }
 
 tick()
+
