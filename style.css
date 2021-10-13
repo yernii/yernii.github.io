@@ -195,6 +195,17 @@ a, button, input, select {
 	text-align: center;
 }
 
+.description_1 {
+	position: absolute;
+	z-index: 3;
+	margin-left: 50px ;
+	margin-right: left;
+	margin-top: 650px;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+
 .lbl {
             color: #fff;
             font-size: 16px;
@@ -224,3 +235,4 @@ a, button, input, select {
 .c {
 	color: #fa0
 }
+
