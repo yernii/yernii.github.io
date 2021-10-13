@@ -142,7 +142,7 @@ loader.load(
       "Projects",
       {
         font:font,
-        size:0.4,
+        size:0.6,
         height:0.1,
         curveSegments:20,
         bevelEnabled:true,
@@ -155,7 +155,8 @@ loader.load(
     )
     const textMaterial=new THREE.MeshBasicMaterial({color:'black'})
     const text=new THREE.Mesh(textGeometry,textMaterial)
-    text.position.set(6.5, 0.2, 15)
+    // text.position.set(6.5, 0.2, 15)
+    text.position.set(5.5, 0.2, 17)
     text.rotation.set(0, 0.8, 0)
     scene.add(text);
   }
@@ -171,7 +172,7 @@ loader2.load(
       "Experience",
       {
         font: font,
-        size: 0.4,
+        size: 0.6,
         height: 0.1,
         curveSegments: 20,
         bevelEnabled: true,
@@ -184,7 +185,7 @@ loader2.load(
     )
     const textMaterial2 = new THREE.MeshBasicMaterial({ color: 'black' })
     const text2 = new THREE.Mesh(textGeometry2, textMaterial2)
-    text2.position.set(11.5, 0.2, 9.8)
+    text2.position.set(11.3, 0.2, 10.8)
     text2.rotation.set(0, 0.8, 0)
     scene.add(text2);
   }
@@ -200,7 +201,7 @@ loader1.load(
       "Skills",
       {
         font: font,
-        size: 0.4,
+        size: 0.6,
         height: 0.1,
         curveSegments: 20,
         bevelEnabled: true,
@@ -213,7 +214,7 @@ loader1.load(
     )
     const textMaterial1 = new THREE.MeshBasicMaterial({ color: 'black' })
     const text1 = new THREE.Mesh(textGeometry1, textMaterial1)
-    text1.position.set(14.2, 0.2, 7.1)
+    text1.position.set(15.2, 0.2, 6.7)
     text1.rotation.set(0, 0.8, 0)
     scene.add(text1);
   }
@@ -229,7 +230,7 @@ loader4.load(
       "Education",
       {
         font: font,
-        size: 0.4,
+        size: 0.6,
         height: 0.1,
         curveSegments: 20,
         bevelEnabled: true,
@@ -242,14 +243,14 @@ loader4.load(
     )
     const textMaterial4 = new THREE.MeshBasicMaterial({ color: 'black' })
     const text4 = new THREE.Mesh(textGeometry4, textMaterial4)
-    text4.position.set(9, 0.2, 12.4)
+    text4.position.set(8, 0.2, 14.4)
     text4.rotation.set(0, 0.8, 0)
     scene.add(text4);
   }
 );
 //Rectangle as a frame 
 const texturePainting = new THREE.TextureLoader().load(
-  "./2.jpeg"
+  "./2438585.jpeg"
 );
 const materialPainting = new THREE.MeshBasicMaterial({
   color: 0xffffff,
@@ -403,4 +404,5 @@ const tick = () => {
 }
 
 tick()
+
 
