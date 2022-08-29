@@ -2,7 +2,7 @@ import * as THREE from 'https://unpkg.com/three@0.126.1/build/three.module.js';
 
 // import * as dat from 'dat.gui'
 import { OrbitControls } from 'https://unpkg.com/three@0.126.1/examples/jsm/controls/OrbitControls.js';
-
+// import {box} from './materials'
 /**
  * Base
  */
@@ -19,10 +19,6 @@ const scene = new THREE.Scene()
 const fog = new THREE.Fog("#262837", 1, 90);
 
 scene.fog = fog
-/**
- * Textures
- */
-const textureLoader = new THREE.TextureLoader()
 
 //Group
 const fullFrame = new THREE.Group();
@@ -74,34 +70,7 @@ const particlesMaterial=new THREE.PointsMaterial({
 
 const particles = new THREE.Points(particlesGeometry, particlesMaterial)
 scene.add(particles)
-//Overlay
-const overlayGeometry = new THREE.PlaneBufferGeometry(2, 2, 1, 1)
-const overlayMaterial = new THREE.ShaderMaterial({
-    // wireframe: true,
-    transparent: true,
-    uniforms:
-    {
-        uAlpha: { value: 1 }
-    },
-    vertexShader: `
-        void main()
-        {
-            gl_Position = vec4(position, 1.0);
-        }
-    `,
-    fragmentShader: `
-        uniform float uAlpha;
 
-        void main()
-        {
-            gl_FragColor = vec4(0.0, 0.0, 0.0, uAlpha);
-        }
-    `
-})
-// Experience, skills, etc buttons
-
-
-// This code portion needs to be refractored to be cleaner!!
 const torusgeometry = new THREE.TorusGeometry(0.5, 0.25, 4, 10);
 const torusmaterial = new THREE.MeshBasicMaterial({ color:'white', wireframe: true });
 const torus = new THREE.Mesh(torusgeometry, torusmaterial);
@@ -250,7 +219,7 @@ loader4.load(
 );
 //Rectangle as a frame 
 const texturePainting = new THREE.TextureLoader().load(
-  "./2438585.jpeg"
+  "./images/loading.jpeg"
 );
 const materialPainting = new THREE.MeshBasicMaterial({
   color: 0xffffff,
@@ -283,6 +252,9 @@ scene.add(ambientLight)
 // Directional light
 const moonLight = new THREE.DirectionalLight("#b9d5ff", 0.12);
 moonLight.position.set(4, 5, - 2)
+
+// ********** For debugging **********
+
 // gui.add(moonLight, 'intensity').min(0).max(1).step(0.001)
 // gui.add(moonLight.position, 'x').min(- 5).max(5).step(0.001)
 // gui.add(moonLight.position, 'y').min(- 5).max(5).step(0.001)
