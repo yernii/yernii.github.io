@@ -58,7 +58,7 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name: "yernar mukayev"
+  name: "Yernar Mukayev"
   avatar: "/assets/images/bio-photo.jpg"
   bio: "My awesome biography constrained to a sentence or two goes here."
   links:
