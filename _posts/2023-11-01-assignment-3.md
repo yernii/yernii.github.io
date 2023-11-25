@@ -9,7 +9,7 @@ tags:
 
 # Intro
 
-For this Spatial Data assignment, I have decided to work with Source #3 - `Travel Guide to Chennai`. I chose this source because having an accurate visualization of tourist places is crucial, based on my personal experience. When we visited this country, it was complicated for us to create a good roadmap of places and understand how to navigate various locations efficiently in terms of time and cost. I believe attempting to visualize a travel guide will help understand how useful this can be for day-to-day life.
+For this Spatial Data assignment, I have decided to work with Source #3 - `Travel Guide to Chennai`. I chose this source because having an accurate visualization of tourist places is crucial, based on my personal experience. When my friends and I had a spring break, we visited X country and it was complicated for us to create a good roadmap of places and understand how to navigate various locations efficiently in terms of time and cost. I believe attempting to visualize a travel guide will help understand how useful this can be for day-to-day life. In the future, I would love to see a tool that creates a recommendation system based on the places you input and displays the best route. The visualization we are working on now is a big step for this system, as finding paths and determining the best-cost routes for user inputs can be delegated to various algorithms. One of these algorithms is Dijkstra's algorithm, which is used to find the shortest path.
 
 # Source
 
