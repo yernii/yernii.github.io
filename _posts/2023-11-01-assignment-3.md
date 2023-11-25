@@ -27,11 +27,13 @@ With the given data, our first step is to utilize Optical Character Recognition 
 
 <img src="/assets/images/A3/1.jpg" style="zoom:50%"/>
 
+The process of obtaining expected results from ChatGPT may not always be successful, so it is important to engage in robust prompt engineering. If the input data is messy, providing additional information can help the language model (LLM) improve its output. In our case, I decided to generally explain the nature of the data, the types of data we have, possible columns, and outline different edge cases. For example, we could have multiple entries for the phone field, etc.
+
 Next, I imported the CSV files into Excel with the custom delimiter. Using the geoCode extension, I started fetching longitude and latitude data. This data preparation is for our visualization tool, Kepler.gl. We obtained three various CSV files for various categories of places: hospitals, parks, and movie theaters:
 
 <img src="/assets/images/A3/2.jpg" style="zoom:50%"/>
 <img src="/assets/images/A3/3.jpg" style="zoom:50%"/>
-<img src="/assets/images/A3/4.jpgg" style="zoom:50%"/>
+<img src="/assets/images/A3/4.jpg" style="zoom:50%"/>
 
 I decided to keep them separate as it will allow us to use Kepler tool's features to separately adjust some parameters for each cluster.
 
