@@ -1,5 +1,5 @@
 ---
-title: "Assignment 3"
+title: "Assignment 3 Spatial Data"
 date: 2019-04-18T15:34:30-04:00
 categories:
   - University
