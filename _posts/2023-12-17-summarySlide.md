@@ -9,6 +9,6 @@ tags:
 
 # Link
 
-[Link to a PDF file](https://docs.google.com/presentation/d/1JH-QVVUdc_iNbhsadxyLkH9qjH-ahG6EH6UMwdNcsJs/edit?usp=sharing)
+[Link to a PDF file](https://github.com/yernii/yernii.github.io/blob/gh-pages/assets/SummarySlide_YM_yes%5D%20.pdf)
 
-[Link to Google Slides Presentation](https://docs.google.com/presentation/d/1JH-QVVUdc_iNbhsadxyLkH9qjH-ahG6EH6UMwdNcsJs/edit?usp=sharing)
+[Link to Google Slides Presentation](https://github.com/yernii/yernii.github.io/blob/gh-pages/assets/SummarySlide_YM_yes%5D.pptx)
